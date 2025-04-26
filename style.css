@@ -1,0 +1,252 @@
+/* style.css for DreamTrip India */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #0077b6;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section#home {
+    background-image: url('images/travel-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(13, 17, 21);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#home {
+    background-size: cover;
+    background-position: center;
+    color: rgb(13, 17, 21);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 1s ease-in-out; /* Smooth background change */
+}
+
+
+section#home h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+section#home p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #0077b6;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.package {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: left;
+}
+
+.package p {
+    margin: 0 0 10px;
+}
+
+.package ul {
+    text-align: left;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #0077b6;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    position: relative;
+}
+
+.package-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#whatsapp-button:hover {
+    background-color: #128c7e;
+}
+
+/* About Section Styling */
+section#about {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section#about h2 {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.about-content ul li {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-content ul li strong {
+    color: #0077b6;
+}
+
+.about-image {
+    margin-top: 40px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .package {
+        width: 100%;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+}
+
+/* About Section Background with Blur */
+section#about {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.about-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.about-background {
+    background: url('images/india-trip.jpg') no-repeat center center/cover;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.7); /* Light transparent white */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.about-content p, .about-content ul {
+    color: #333;
+}
+
+.about-content ul {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.about-content ul li {
+    margin-bottom: 10px;
+}
